@@ -35,3 +35,6 @@ drafts/
 .idea/
 *.swp
 *.swo
+
+# Root level smtcmp db
+.smtcmp_json_db/

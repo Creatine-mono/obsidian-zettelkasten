@@ -5,34 +5,34 @@
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": false,
+  "collapse-color-groups": true,
   "colorGroups": [
     {
-      "query": "path:\"웹개발-프로그래밍\"",
-      "color": {
-        "a": 1,
-        "rgb": 255
-      }
-    },
-    {
-      "query": "path:\"보안-해킹\" OR path:\"AI보안\"",
-      "color": {
-        "a": 1,
-        "rgb": 65280
-      }
-    },
-    {
-      "query": "path:\"AI-딥러닝\" OR path:\"인공지능\"",
+      "query": "path:\"AI 허브\" OR path:딥러닝 OR path:언어모델 OR path:데이터분석 OR tag:ai OR line:(numpy OR Numpy OR \"데이터 사이언스\")",
       "color": {
         "a": 1,
         "rgb": 16711680
       }
     },
     {
-      "query": "",
+      "query": "path:\"보안 허브\" OR path:AI보안 OR path:개인정보보호 OR tag:보안 OR line:노말틱 OR line:\"No System Is Safe\"",
       "color": {
         "a": 1,
-        "rgb": 8421504
+        "rgb": 65280
+      }
+    },
+    {
+      "query": "path:\"웹개발 허브.md\" OR file:\"웹개발 허브\" OR path:웹개발/ OR tag:web OR tag:웹 OR line:웹개발",
+      "color": {
+        "a": 1,
+        "rgb": 255
+      }
+    },
+    {
+      "query": "line:(자격증 OR 수료증 OR 세미나 OR 컨퍼런스 OR \"AI EXPO\") OR path:\"03-프로젝트노트/\" OR path:\"개인정보 불볍유통 대응모니터링단\"",
+      "color": {
+        "a": 1,
+        "rgb": 0
       }
     }
   ],
@@ -46,6 +46,6 @@
   "repelStrength": 15,
   "linkStrength": 0.8,
   "linkDistance": 350,
-  "scale": 0.039506172839506346,
+  "scale": 0.05932617187500018,
   "close": true
 }
