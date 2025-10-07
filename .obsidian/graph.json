@@ -8,13 +8,6 @@
   "collapse-color-groups": false,
   "colorGroups": [
     {
-      "query": "path:\"AI-딥러닝\" OR path:\"AI보안\" OR path:\"인공지능\"",
-      "color": {
-        "a": 1,
-        "rgb": 16711680
-      }
-    },
-    {
       "query": "path:\"웹개발-프로그래밍\"",
       "color": {
         "a": 1,
@@ -22,10 +15,17 @@
       }
     },
     {
-      "query": "path:\"보안-해킹\"",
+      "query": "path:\"보안-해킹\" OR path:\"AI보안\"",
       "color": {
         "a": 1,
         "rgb": 65280
+      }
+    },
+    {
+      "query": "path:\"AI-딥러닝\" OR path:\"인공지능\"",
+      "color": {
+        "a": 1,
+        "rgb": 16711680
       }
     },
     {
@@ -46,6 +46,6 @@
   "repelStrength": 15,
   "linkStrength": 0.8,
   "linkDistance": 350,
-  "scale": 0.3,
+  "scale": 0.039506172839506346,
   "close": true
 }
