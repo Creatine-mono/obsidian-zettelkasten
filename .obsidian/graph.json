@@ -8,10 +8,38 @@
   "collapse-color-groups": false,
   "colorGroups": [
     {
+      "query": "path:\"AI-딥러닝\" OR path:\"AI보안\" OR path:\"인공지능\"",
+      "color": {
+        "a": 1,
+        "rgb": 16764108
+      }
+    },
+    {
+      "query": "path:\"웹개발-프로그래밍\"",
+      "color": {
+        "a": 1,
+        "rgb": 6591981
+      }
+    },
+    {
+      "query": "path:\"보안-해킹\"",
+      "color": {
+        "a": 1,
+        "rgb": 15631086
+      }
+    },
+    {
+      "query": "path:\"세미나-컨퍼런스\" OR path:\"외부활동\"",
+      "color": {
+        "a": 1,
+        "rgb": 10027263
+      }
+    },
+    {
       "query": "",
       "color": {
         "a": 1,
-        "rgb": 14048348
+        "rgb": 8553090
       }
     }
   ],
@@ -25,6 +53,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.11660891579457322,
+  "scale": 0.1166089157945734,
   "close": true
 }
