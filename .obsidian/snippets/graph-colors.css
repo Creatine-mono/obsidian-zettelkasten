@@ -1,0 +1,38 @@
+/* 그래프 뷰 카테고리별 색상 설정 */
+
+/* AI 관련 노트 - 빨간색 */
+.graph-view .graph-color-fill[data-path*="AI-딥러닝"],
+.graph-view .graph-color-fill[data-path*="AI보안"],
+.graph-view .graph-color-fill[data-path*="인공지능"],
+.graph-view .graph-color-fill[data-path*="머신러닝"],
+.graph-view .graph-color-fill[data-path*="딥러닝"] {
+    color: #ff4444 !important;
+    fill: #ff4444 !important;
+}
+
+/* 웹개발 관련 노트 - 파란색 */
+.graph-view .graph-color-fill[data-path*="웹개발-프로그래밍"],
+.graph-view .graph-color-fill[data-path*="JavaScript"],
+.graph-view .graph-color-fill[data-path*="React"],
+.graph-view .graph-color-fill[data-path*="프로그래밍"] {
+    color: #4444ff !important;
+    fill: #4444ff !important;
+}
+
+/* 기타 노트 - 회색 */
+.graph-view .graph-color-fill {
+    color: #666666 !important;
+    fill: #666666 !important;
+}
+
+/* 강조된 노드들 */
+.graph-view .graph-color-fill.is-highlighted[data-path*="AI-딥러닝"],
+.graph-view .graph-color-fill.is-highlighted[data-path*="AI보안"] {
+    color: #ff6666 !important;
+    fill: #ff6666 !important;
+}
+
+.graph-view .graph-color-fill.is-highlighted[data-path*="웹개발-프로그래밍"] {
+    color: #6666ff !important;
+    fill: #6666ff !important;
+}
