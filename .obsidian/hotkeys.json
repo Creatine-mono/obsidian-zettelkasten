@@ -1,0 +1,10 @@
+{
+  "smart-composer:open-new-chat": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "Z"
+    }
+  ]
+}

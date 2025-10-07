@@ -1,0 +1,81 @@
+{
+  "id": "22313495-7bf0-4f29-8531-1860fd1c3107",
+  "title": "이거 파이썬 코드로 바꿔줘",
+  "messages": [
+    {
+      "role": "user",
+      "content": {
+        "root": {
+          "children": [
+            {
+              "children": [
+                {
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "이거 파이썬 코드로 바꿔줘",
+                  "type": "text",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "type": "paragraph",
+              "version": 1,
+              "textFormat": 0,
+              "textStyle": ""
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "type": "root",
+          "version": 1
+        }
+      },
+      "promptContent": [
+        {
+          "type": "text",
+          "text": "```AI보안 기술/무제.md\n`from presidio_analyzer import AnalyzerEngine from presidio_anonymizer import AnonymizerEngine  analyzer = AnalyzerEngine()               # PII 분석 엔진 초기화 anonymizer = AnonymizerEngine()           # PII 익명화 엔진 초기화  text = \"연락처: john.doe@example.com, 전화: 010-1234-5678\" results = analyzer.analyze(text=text, entities=[\"EMAIL_ADDRESS\", \"PHONE_NUMBER\"], language=\"en\") anonymized_result = anonymizer.anonymize(     text=text,      analyzer_results=results,     operators={         \"EMAIL_ADDRESS\": {\"type\": \"replace\", \"new_value\": \"<EMAIL>\"},         \"PHONE_NUMBER\": {\"type\": \"mask\", \"masking_char\": \"*\", \"chars_to_mask\": 8, \"from_end\": True}     } ) print(anonymized_result.text) # 출력: \"연락처: <EMAIL>, 전화: ******5678\"`\n```\n\n\n이거 파이썬 코드로 바꿔줘\n\n"
+        }
+      ],
+      "id": "662e6c8f-fec3-48a6-bd25-379f0d2a50d9",
+      "mentionables": [
+        {
+          "type": "current-file",
+          "file": "AI보안 기술/무제.md"
+        },
+        {
+          "type": "block",
+          "content": "`from presidio_analyzer import AnalyzerEngine from presidio_anonymizer import AnonymizerEngine  analyzer = AnalyzerEngine()               # PII 분석 엔진 초기화 anonymizer = AnonymizerEngine()           # PII 익명화 엔진 초기화  text = \"연락처: john.doe@example.com, 전화: 010-1234-5678\" results = analyzer.analyze(text=text, entities=[\"EMAIL_ADDRESS\", \"PHONE_NUMBER\"], language=\"en\") anonymized_result = anonymizer.anonymize(     text=text,      analyzer_results=results,     operators={         \"EMAIL_ADDRESS\": {\"type\": \"replace\", \"new_value\": \"<EMAIL>\"},         \"PHONE_NUMBER\": {\"type\": \"mask\", \"masking_char\": \"*\", \"chars_to_mask\": 8, \"from_end\": True}     } ) print(anonymized_result.text) # 출력: \"연락처: <EMAIL>, 전화: ******5678\"`",
+          "file": "AI보안 기술/무제.md",
+          "startLine": 51,
+          "endLine": 51
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": "<smtcmp_block filename=\"AI보안 기술/무제.md\" language=\"markdown\">\n```python\nfrom presidio_analyzer import AnalyzerEngine\nfrom presidio_anonymizer import AnonymizerEngine\n\nanalyzer = AnalyzerEngine()               # PII 분석 엔진 초기화\nanonymizer = AnonymizerEngine",
+      "id": "14447de0-502f-46ab-bc46-b206a592936a",
+      "metadata": {
+        "model": {
+          "providerType": "gemini",
+          "providerId": "gemini",
+          "id": "gemini-2.0-flash",
+          "model": "gemini-2.0-flash"
+        },
+        "usage": {
+          "prompt_tokens": 8065,
+          "completion_tokens": 68,
+          "total_tokens": 8133
+        }
+      }
+    }
+  ],
+  "createdAt": 1753888288138,
+  "updatedAt": 1753888289711,
+  "schemaVersion": 1
+}

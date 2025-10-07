@@ -1,0 +1,5 @@
+﻿이름,설명,정확도,속도
+korean-PII_Masking_Bert,Korean bert모델 PPI 파인튜닝,중하(맥락적 파악 및 이름 식별 잘 못함),매우빠름 (0.3초)
+PII-Redactor,Llamma 3.2 1B 모델 PPI 파인튜닝,"매우높음(맥락적 파악 및 lz3q같은 숫자 변형도 모두 찾음) 단, 한국어 맥락 파악 및 주소등은 영어보다는 성능 낮음 (그래도 ko bert보다는 잘함)",느림 (40초) → AWS A100이용시 5초 이내 예상
+PII-Redactor 한국어 튜닝,,,
+Llama KO 3B 모델 파인 튜닝,,,

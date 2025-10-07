@@ -1,0 +1,74 @@
+{
+  "id": "9c61c3fe-d22f-4a98-967e-4e26568379f1",
+  "title": "키워드 중심으로 개념만 뽑아줘",
+  "messages": [
+    {
+      "role": "user",
+      "content": {
+        "root": {
+          "children": [
+            {
+              "children": [
+                {
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "키워드 중심으로 개념만 뽑아줘",
+                  "type": "text",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "type": "paragraph",
+              "version": 1,
+              "textFormat": 0,
+              "textStyle": ""
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "type": "root",
+          "version": 1
+        }
+      },
+      "promptContent": [
+        {
+          "type": "text",
+          "text": "\n\n키워드 중심으로 개념만 뽑아줘\n\n"
+        }
+      ],
+      "id": "525e5809-8bb7-465e-b7a8-a165c2dab305",
+      "mentionables": [
+        {
+          "type": "current-file",
+          "file": "AI보안기술개발[개인정보반]/인공지능이론 07-22 ~ 07-28/01 인공지능 역사와 현재 수준.md"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": "<smtcmp_block filename=\"AI보안기술개발[개인정보반]/인공지능이론 07-22 ~ 07-28/01 인공지능 역사와 현재 수준.md\" language=\"markdown\">\n**인공지능이란**\n1.  인공지능 시대\n    *   생성형 AI: ChatGPT, DeepSeek, Gemini\n    *   영상 추천시스템: Netflix, YouTube\n\n**인공지능 역사**\n*   인간 지능의 인공적 구현, 부흥기/침체기 반복\n\n**XOR 문제**\n*   선형 분리 불가능, 다층 퍼셉트론(MLP) 필요\n\n**기울기 소실 문제**\n1.  정의: 심층 신경망, 역전파, 기울기 감소, 가중치 업데이트 불능\n2.  원인:\n    *   활성화 함수 (Sigmoid, Tanh): 기울기 0에 근접\n    *   심층 네트워크: 기울기 소실\n3.  영향:\n    *   학습 지연/중단\n    *   성능 저하\n4.  해결 방법:\n    *   ReLU 활성화 함수\n    *   Leaky ReLU, Parametric ReLU\n    *   Batch Normalization\n    *   Residual Connection (ResNet)\n    *   Gradient Clipping\n\n*   생성형 AI: LLM 기반, 텍스트, 이미지, 코드 자동 생성\n\n### ChatGPT\n\n*   개발사: OpenAI\n*   모델: Transformer\n*   데이터: 텍스트, 코드\n*   성능: 텍스트 생성, 자연어 처리\n\n### Gemini\n\n*   개발사: Google\n*   모델: Transformer (멀티모달)\n*   데이터: 텍스트, 이미지, 오디오, 비디오\n*   성능: 멀티모달 이해/생성\n\n### DeepSeek\n\n*   개발사: 중국 AI 기업\n*   모델: Transformer\n*   데이터: 코드\n*   성능: 코드 생성, 이해\n</smtcmp_block>\n\n요청하신 대로 핵심 키워드 중심으로 요약했습니다.",
+      "id": "206f44b1-400b-42d3-a3ff-80ec44f2520f",
+      "metadata": {
+        "model": {
+          "providerType": "gemini",
+          "providerId": "gemini",
+          "id": "gemini-2.0-flash",
+          "model": "gemini-2.0-flash"
+        },
+        "usage": {
+          "prompt_tokens": 1391,
+          "completion_tokens": 520,
+          "total_tokens": 1911
+        }
+      }
+    }
+  ],
+  "createdAt": 1753719636935,
+  "updatedAt": 1753719640412,
+  "schemaVersion": 1
+}
